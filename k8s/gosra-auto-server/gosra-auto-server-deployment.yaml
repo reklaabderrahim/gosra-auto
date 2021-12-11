@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: gosra-auto-server-deployment
+  name: gosra-auto-server-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gosra-auto-server-deployment
+  template:
+    metadata:
+      labels:
+        app: gosra-auto-server-deployment
+    spec:
+      containers:
+      - image: reklaabderrahim/gosra-auto-server:latest
+        name: gosra-auto-server
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gosra-auto-server-service
+spec:
+  selector:
+    app: gosra-auto-server-deployment
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080

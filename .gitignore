@@ -1,0 +1,4 @@
+.idea
+gosra-auto-ihm/node_modules
+gosra-auto-server/.mvn
+gosra-auto-server/gosra-auto-server.iml

@@ -1,0 +1,65 @@
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: add-prefix
+spec:
+  addPrefix:
+    prefix: /ihm
+
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: redirect-scheme
+spec:
+  redirectScheme:
+    scheme: https
+    permanent: true
+    port: "443"
+
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: nginx
+  namespace: default
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`gosra-auto.dz`)
+      kind: Rule
+      middlewares:
+        - name: add-prefix
+        - name: redirect-scheme
+      services:
+        - name: gosra-auto-ihm-service
+          port: 4200
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: nginx-https
+  namespace: default
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: Host(`gosra-auto.dz`)
+      kind: Rule
+      services:
+        - name: gosra-auto-ihm-service
+          port: 4200
+    - match: Host(`gosra-auto.dz`) && Path(`/ihm`)
+      kind: Rule
+      services:
+        - name: gosra-auto-ihm-service
+          port: 4200
+    - match: Host(`gosra-auto.dz`) && Path(`/server`)
+      kind: Rule
+      services:
+        - name: gosra-auto-server-service
+          port: 8080
+  tls:
+    certResolver: pebble

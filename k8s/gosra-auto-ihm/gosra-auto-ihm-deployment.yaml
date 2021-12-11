@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: gosra-auto-ihm-deployment
+  name: gosra-auto-ihm-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gosra-auto-ihm-deployment
+  template:
+    metadata:
+      labels:
+        app: gosra-auto-ihm-deployment
+    spec:
+      containers:
+      - image: reklaabderrahim/gosra-auto-ihm:latest
+        name: gosra-auto-ihm
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gosra-auto-ihm-service
+spec:
+  selector:
+    app: gosra-auto-ihm-deployment
+  ports:
+    - protocol: TCP
+      port: 4200
+      targetPort: 80

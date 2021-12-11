@@ -1,0 +1,23 @@
+apiVersion: skaffold/v2beta25
+kind: Config
+metadata:
+  name: gosra-auto
+build:
+  artifacts:
+    - image: reklaabderrahim/gosra-auto-ihm
+      context: gosra-auto-ihm
+      docker:
+        dockerfile: Dockerfile
+    - image: reklaabderrahim/gosra-auto-server
+      context: gosra-auto-server
+      jib:
+        args:
+          - -Pjib
+  tagPolicy:
+    gitCommit: {}
+deploy:
+  kubectl:
+    manifests:
+      - k8s/ingress-route.yaml
+      - k8s/gosra-auto-ihm/gosra-auto-ihm-deployment.yaml
+      - k8s/gosra-auto-server/gosra-auto-server-deployment.yaml
