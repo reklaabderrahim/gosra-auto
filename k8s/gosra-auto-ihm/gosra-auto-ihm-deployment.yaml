@@ -4,6 +4,7 @@ metadata:
   labels:
     app: gosra-auto-ihm-deployment
   name: gosra-auto-ihm-deployment
+  namespace: gosra-auto
 spec:
   replicas: 1
   selector:
@@ -15,13 +16,14 @@ spec:
         app: gosra-auto-ihm-deployment
     spec:
       containers:
-      - image: reklaabderrahim/gosra-auto-ihm:latest
-        name: gosra-auto-ihm
+        - image: reklaabderrahim/gosra-auto-ihm:latest
+          name: gosra-auto-ihm
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: gosra-auto-ihm-service
+  namespace: gosra-auto
 spec:
   selector:
     app: gosra-auto-ihm-deployment

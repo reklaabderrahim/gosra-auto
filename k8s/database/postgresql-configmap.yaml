@@ -1,0 +1,13 @@
+# PostgreSQL StatefulSet ConfigMap
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-db-config
+  namespace: gosra-auto
+  labels:
+    app: postgresql-db
+data:
+  POSTGRES_PASSWORD: rekla
+  POSTGRES_USER: rekla
+  POSTGRES_DB: gosra_auto
+  PGDATA: /data/pgdata

@@ -3,27 +3,27 @@ apiVersion: traefik.containo.us/v1alpha1
 kind: Middleware
 metadata:
   name: add-prefix
+  namespace: gosra-auto
 spec:
   addPrefix:
     prefix: /ihm
-
 ---
 apiVersion: traefik.containo.us/v1alpha1
 kind: Middleware
 metadata:
   name: redirect-scheme
+  namespace: gosra-auto
 spec:
   redirectScheme:
     scheme: https
     permanent: true
     port: "443"
-
 ---
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
   name: nginx
-  namespace: default
+  namespace: gosra-auto
 spec:
   entryPoints:
     - web
@@ -41,7 +41,7 @@ apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
   name: nginx-https
-  namespace: default
+  namespace: gosra-auto
 spec:
   entryPoints:
     - websecure

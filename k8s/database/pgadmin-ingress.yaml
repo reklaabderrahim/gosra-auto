@@ -1,0 +1,14 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: pgadmin
+  namespace: gosra-auto
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`pgadmin.gosra.dz`)
+      kind: Rule
+      services:
+        - name: pgadmin-headless
+          port: 80

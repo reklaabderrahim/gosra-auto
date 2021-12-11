@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pgadmin-config
+  namespace: gosra-auto
+data:
+  servers.json: |
+    {
+      "Servers": {
+        "1": {
+          "Name": "K8S DB",
+          "Group": "Servers",
+          "Port": 5432,
+          "Username": "rekla",
+          "Host": "172.16.16.220",
+          "MaintenanceDB": "gosra_auto"
+        }
+      }
+    }

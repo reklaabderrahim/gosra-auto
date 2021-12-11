@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!--TODO a changer par l'endroit ou on veut stocker les logs-->
+    <property name="LOGS" value="logs" />
+
+    <!--*******************************************************************-->
+    <!-- APPENDERS: defining log file names, patterns and rolling policies -->
+    <!--*******************************************************************-->
+    <appender name="server.appender" class="ch.qos.logback.core.FileAppender">
+        <file>${LOGS}/server.log</file>
+        <encoder>
+            <pattern>%date{ISO8601} %-5level [@project.artifactId@ @project.version@] [%thread] %logger{5} - %message%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="error.appender" class="ch.qos.logback.core.FileAppender">
+        <file>${LOGS}/errors.log</file>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+        <encoder>
+            <pattern>%date{ISO8601} %-5level [@project.artifactId@ @project.version@] [%thread] %logger{5} - %message %ex{10}%nopex%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="console.appender" class="ch.qos.logback.core.ConsoleAppender">
+        <Target>System.out</Target>
+        <encoder>
+            <pattern>%date{ISO8601} %-5level [@project.artifactId@ @project.version@] [%thread] %logger{5} - %message%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="keycloakApiRest.appender" class="ch.qos.logback.core.FileAppender">
+        <file>${LOGS}/keycloak-api-rest.log</file>
+        <encoder>
+            <pattern>%date{ISO8601} %-5level [@project.artifactId@ @project.version@] [%thread] %logger{5} - %message %ex{0}%nopex%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--***************************************************************-->
+    <!-- LOGGERS: define what appender to use regarding message level  -->
+    <!--***************************************************************-->
+
+    <logger name="fr.mipih.digiachats.consumer.rest" level="DEBUG"  additivity="false">
+        <appender-ref ref="keycloakApiRest.appender"/>
+    </logger>
+
+    <logger name="fr.mipih.digiachats" level="ERROR">
+        <appender-ref ref="error.appender"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="console.appender"/>
+        <appender-ref ref="server.appender"/>
+    </root>
+
+    <logger name="fr.mipih.digiachats" level="DEBUG"/>
+    <!-- LOG for API rest -->
+    <logger name="org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod" level="DEBUG"/>
+
+</configuration>

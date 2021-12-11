@@ -4,6 +4,7 @@ metadata:
   labels:
     app: gosra-auto-server-deployment
   name: gosra-auto-server-deployment
+  namespace: gosra-auto
 spec:
   replicas: 1
   selector:
@@ -15,13 +16,14 @@ spec:
         app: gosra-auto-server-deployment
     spec:
       containers:
-      - image: reklaabderrahim/gosra-auto-server:latest
-        name: gosra-auto-server
+        - image: reklaabderrahim/gosra-auto-server:latest
+          name: gosra-auto-server
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: gosra-auto-server-service
+  namespace: gosra-auto
 spec:
   selector:
     app: gosra-auto-server-deployment

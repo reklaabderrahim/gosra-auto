@@ -1,0 +1,27 @@
+version: "3.7"
+services:
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - "9090:80"
+    volumes:
+      - "pgadmin:/var/lib/pgadmin"
+    environment:
+      - "PGADMIN_DEFAULT_EMAIL=orange-banbou@orange.com"
+      - "PGADMIN_DEFAULT_PASSWORD=pbaq01owner"
+  db:
+    build:
+      context: ../ressources
+    container_name: POSTGRES_LOCAL
+    volumes:
+      - "dbdata-local:/var/lib/postgresql/data"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      -
+
+volumes:
+  dbdata-local:
+  pgadmin:
