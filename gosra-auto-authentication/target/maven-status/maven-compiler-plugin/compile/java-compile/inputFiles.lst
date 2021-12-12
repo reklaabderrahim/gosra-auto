@@ -1,0 +1,6 @@
+/home/rekla/dev/projects/gosra-auto/gosra-auto-authentication/src/main/java/fr/rekla/gosraAuto/authentication/command/User.java
+/home/rekla/dev/projects/gosra-auto/gosra-auto-authentication/src/main/java/fr/rekla/gosraAuto/authentication/common/UserDto.java
+/home/rekla/dev/projects/gosra-auto/gosra-auto-authentication/src/main/java/fr/rekla/gosraAuto/authentication/rest/UserRestController.java
+/home/rekla/dev/projects/gosra-auto/gosra-auto-authentication/src/main/java/fr/rekla/gosraAuto/authentication/config/AxonConfig.java
+/home/rekla/dev/projects/gosra-auto/gosra-auto-authentication/src/main/java/fr/rekla/gosraAuto/authentication/GosraAutoServerApplication.java
+/home/rekla/dev/projects/gosra-auto/gosra-auto-authentication/src/main/java/fr/rekla/gosraAuto/authentication/common/CurrentStatus.java

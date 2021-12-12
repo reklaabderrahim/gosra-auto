@@ -1,5 +1,3 @@
-CREATE USER pbaq01owner PASSWORD 'pbaq01owner';
-CREATE USER pbaq01update PASSWORD 'pbaq01update';
-CREATE USER pbaq01select PASSWORD 'pbaq01select';
-CREATE DATABASE pbaq01;
-GRANT ALL PRIVILEGES ON DATABASE pbaq01 TO pbaq01owner;
+CREATE USER rekla PASSWORD 'rekla';
+CREATE DATABASE gosra_auto;
+GRANT ALL PRIVILEGES ON DATABASE gosra_auto TO rekla;

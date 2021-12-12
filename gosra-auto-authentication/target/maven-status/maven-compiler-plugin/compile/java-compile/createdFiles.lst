@@ -1,0 +1,6 @@
+fr/rekla/gosraAuto/authentication/rest/UserRestController.class
+fr/rekla/gosraAuto/authentication/config/AxonConfig.class
+fr/rekla/gosraAuto/authentication/GosraAutoServerApplication.class
+fr/rekla/gosraAuto/authentication/command/User.class
+fr/rekla/gosraAuto/authentication/common/CurrentStatus.class
+fr/rekla/gosraAuto/authentication/common/UserDto.class

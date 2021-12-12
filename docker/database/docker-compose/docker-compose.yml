@@ -3,12 +3,12 @@ services:
   pgadmin:
     image: dpage/pgadmin4
     ports:
-      - "9090:80"
+      - "9191:80"
     volumes:
       - "pgadmin:/var/lib/pgadmin"
     environment:
-      - "PGADMIN_DEFAULT_EMAIL=orange-banbou@orange.com"
-      - "PGADMIN_DEFAULT_PASSWORD=pbaq01owner"
+      - "PGADMIN_DEFAULT_EMAIL=reklaabderrahim@hotmail.com"
+      - "PGADMIN_DEFAULT_PASSWORD=rekla"
   db:
     build:
       context: ../ressources
@@ -20,7 +20,6 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      -
 
 volumes:
   dbdata-local:
