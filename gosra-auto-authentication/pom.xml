@@ -14,7 +14,7 @@
     <name>gosra-auto-server</name>
     <description>gosra-auto-server</description>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
         <kotlin.version>1.5.10</kotlin.version>
         <axon.version>4.5.5</axon.version>
         <lombok.version>1.18.22</lombok.version>
@@ -179,9 +179,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven.compiler.plugin.version}</version>
-<!--                <configuration>-->
-<!--                    <release>${java.version}</release>-->
-<!--                </configuration>-->
+                <configuration>
+                    <release>${java.version}</release>
+                </configuration>
                 <executions>
                     <!-- Replacing default-compile as it is treated specially by maven -->
                     <execution>
