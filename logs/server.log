@@ -4524,3 +4524,344 @@ org.axonframework.axonserver.connector.command.AxonServerRemoteCommandHandlingEx
 2021-12-12 20:14:58,713 INFO  [@project.artifactId@ @project.version@] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-12-12 20:14:58,714 INFO  [@project.artifactId@ @project.version@] [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2021-12-12 20:14:58,716 INFO  [@project.artifactId@ @project.version@] [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet - Completed initialization in 2 ms
+2021-12-12 20:16:01,087 INFO  [@project.artifactId@ @project.version@] [SpringApplicationShutdownHook] i.a.a.c.c.i.CommandChannelImpl - Unregistered handler for command 'fr.rekla.gosraAuto.authentication.api.UserCreateCommand' in context 'default'
+2021-12-12 20:16:01,118 INFO  [@project.artifactId@ @project.version@] [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 20:16:01,124 INFO  [@project.artifactId@ @project.version@] [SpringApplicationShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-12-12 20:16:01,129 INFO  [@project.artifactId@ @project.version@] [SpringApplicationShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-12-13 17:41:31,149 INFO  [@project.artifactId@ @project.version@] [restartedMain] f.r.g.a.GosraAutoServerApplication - Starting GosraAutoServerApplication using Java 11.0.13 on rekla-Katana-GF66-11UG with PID 18702 (/home/rekla/dev/projects/gosra-auto/gosra-auto-authentication/target/classes started by rekla in /home/rekla/dev/projects/gosra-auto)
+2021-12-13 17:41:31,150 DEBUG [@project.artifactId@ @project.version@] [restartedMain] f.r.g.a.GosraAutoServerApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-13 17:41:31,150 INFO  [@project.artifactId@ @project.version@] [restartedMain] f.r.g.a.GosraAutoServerApplication - The following profiles are active: command
+2021-12-13 17:41:31,212 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-13 17:41:31,213 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-13 17:41:32,300 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-13 17:41:32,318 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
+2021-12-13 17:41:32,368 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.axonframework.springboot.autoconfig.EventProcessingAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-12-13 17:41:32,504 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#4be82a72#33' of type [org.axonframework.spring.config.annotation.SpringContextParameterResolverFactoryBuilder$ClasspathParameterResolverFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 17:41:32,504 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#4be82a72#33' of type [org.axonframework.messaging.annotation.MultiParameterResolverFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 17:41:32,506 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#fe22390#33' of type [org.axonframework.spring.config.annotation.SpringBeanDependencyResolverFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 17:41:32,506 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#46c8c769' of type [org.axonframework.spring.config.annotation.SpringBeanParameterResolverFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 17:41:32,530 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '__axon-parameter-resolver-factory' of type [org.axonframework.spring.config.ApplicationContextLookupParameterResolverFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 17:41:32,530 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '__axon-parameter-resolver-factory' of type [org.axonframework.messaging.annotation.MultiParameterResolverFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 17:41:32,535 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#4555b590' of type [org.axonframework.spring.config.annotation.SpringHandlerDefinitionBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 17:41:32,535 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#4555b590' of type [org.axonframework.messaging.annotation.MultiHandlerDefinition] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 17:41:32,536 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#380119ca' of type [org.axonframework.spring.config.annotation.SpringHandlerEnhancerDefinitionBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 17:41:32,536 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#380119ca' of type [org.axonframework.messaging.annotation.MultiHandlerEnhancerDefinition] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 17:41:32,537 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '__axon-handler-definition' of type [org.axonframework.messaging.annotation.MultiHandlerDefinition] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 17:41:32,691 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-12-13 17:41:32,698 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-13 17:41:32,698 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2021-12-13 17:41:32,698 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-13 17:41:32,737 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2021-12-13 17:41:32,737 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1523 ms
+2021-12-13 17:41:32,921 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-13 17:41:32,964 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.h.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-13 17:41:33,092 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-13 17:41:33,180 INFO  [@project.artifactId@ @project.version@] [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2021-12-13 17:41:33,294 INFO  [@project.artifactId@ @project.version@] [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2021-12-13 17:41:33,309 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-12-13 17:41:34,065 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-13 17:41:34,070 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-13 17:41:34,131 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.a.XStreamAutoConfiguration - Initializing an XStream instance since none was found. The auto configuration base packages will be used as wildcards for the XStream security settings.
+2021-12-13 17:41:34,225 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.u.XStreamSecurityTypeUtility - Constructing wildcard type for base package [fr.rekla.gosraAuto.authentication].
+2021-12-13 17:41:34,225 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.u.XStreamSecurityTypeUtility - Constructing wildcard type for base package [org.axonframework.eventhandling.tokenstore].
+2021-12-13 17:41:34,225 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.u.XStreamSecurityTypeUtility - Constructing wildcard type for base package [org.axonframework.modelling.saga.repository.jpa].
+2021-12-13 17:41:34,230 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.ChainingConverter - ContentTypeConverter of type [class org.axonframework.serialization.xml.XomToStringConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/Document
+2021-12-13 17:41:34,231 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.ChainingConverter - ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToXomConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/Document
+2021-12-13 17:41:34,378 WARN  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-13 17:41:34,722 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-12-13 17:41:34,725 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-12-13 17:41:34,891 INFO  [@project.artifactId@ @project.version@] [restartedMain] i.a.a.c.i.AxonServerManagedChannel - Requesting connection details from 172.16.16.245:8124
+2021-12-13 17:41:35,356 INFO  [@project.artifactId@ @project.version@] [restartedMain] i.a.a.c.i.AxonServerManagedChannel - Successfully connected to 172.16.16.245:8124
+2021-12-13 17:41:35,370 INFO  [@project.artifactId@ @project.version@] [restartedMain] i.a.a.c.i.ControlChannelImpl - Connected instruction stream for context 'default'. Sending client identification
+2021-12-13 17:41:35,386 INFO  [@project.artifactId@ @project.version@] [restartedMain] i.a.a.c.c.i.CommandChannelImpl - CommandChannel for context 'default' connected, 0 command handlers registered
+2021-12-13 17:41:35,389 INFO  [@project.artifactId@ @project.version@] [restartedMain] i.a.a.c.c.i.CommandChannelImpl - Registered handler for command 'fr.rekla.gosraAuto.authentication.api.UserCreateCommand' in context 'default'
+2021-12-13 17:41:35,406 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-12-13 17:41:35,422 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-13 17:41:35,457 INFO  [@project.artifactId@ @project.version@] [restartedMain] f.r.g.a.GosraAutoServerApplication - Started GosraAutoServerApplication in 4.701 seconds (JVM running for 5.608)
+2021-12-13 17:41:35,686 INFO  [@project.artifactId@ @project.version@] [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-13 17:41:35,686 INFO  [@project.artifactId@ @project.version@] [RMI TCP Connection(1)-127.0.0.1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-12-13 17:41:35,689 INFO  [@project.artifactId@ @project.version@] [RMI TCP Connection(1)-127.0.0.1] o.s.w.s.DispatcherServlet - Completed initialization in 2 ms
+2021-12-13 18:11:46,851 INFO  [@project.artifactId@ @project.version@] [Thread-5] i.a.a.c.c.i.CommandChannelImpl - Unregistered handler for command 'fr.rekla.gosraAuto.authentication.api.UserCreateCommand' in context 'default'
+2021-12-13 18:11:46,897 INFO  [@project.artifactId@ @project.version@] [Thread-5] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-13 18:11:46,903 INFO  [@project.artifactId@ @project.version@] [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-12-13 18:11:46,914 INFO  [@project.artifactId@ @project.version@] [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-12-13 18:11:47,065 INFO  [@project.artifactId@ @project.version@] [restartedMain] f.r.g.a.GosraAutoServerApplication - Starting GosraAutoServerApplication using Java 11.0.13 on rekla-Katana-GF66-11UG with PID 18702 (/home/rekla/dev/projects/gosra-auto/gosra-auto-authentication/target/classes started by rekla in /home/rekla/dev/projects/gosra-auto)
+2021-12-13 18:11:47,065 DEBUG [@project.artifactId@ @project.version@] [restartedMain] f.r.g.a.GosraAutoServerApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-13 18:11:47,066 INFO  [@project.artifactId@ @project.version@] [restartedMain] f.r.g.a.GosraAutoServerApplication - The following profiles are active: command
+2021-12-13 18:11:47,658 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-13 18:11:47,669 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2021-12-13 18:11:47,699 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.axonframework.springboot.autoconfig.EventProcessingAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-12-13 18:11:47,732 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#3bdba526#33' of type [org.axonframework.spring.config.annotation.SpringContextParameterResolverFactoryBuilder$ClasspathParameterResolverFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:11:47,732 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#3bdba526#33' of type [org.axonframework.messaging.annotation.MultiParameterResolverFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:11:47,733 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#5f459a23#33' of type [org.axonframework.spring.config.annotation.SpringBeanDependencyResolverFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:11:47,734 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#a91a7a9' of type [org.axonframework.spring.config.annotation.SpringBeanParameterResolverFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:11:47,743 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '__axon-parameter-resolver-factory' of type [org.axonframework.spring.config.ApplicationContextLookupParameterResolverFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:11:47,743 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '__axon-parameter-resolver-factory' of type [org.axonframework.messaging.annotation.MultiParameterResolverFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:11:47,755 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#180e7cac' of type [org.axonframework.spring.config.annotation.SpringHandlerDefinitionBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:11:47,755 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#180e7cac' of type [org.axonframework.messaging.annotation.MultiHandlerDefinition] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:11:47,757 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#18bddc72' of type [org.axonframework.spring.config.annotation.SpringHandlerEnhancerDefinitionBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:11:47,757 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#18bddc72' of type [org.axonframework.messaging.annotation.MultiHandlerEnhancerDefinition] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:11:47,780 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '__axon-handler-definition' of type [org.axonframework.messaging.annotation.MultiHandlerDefinition] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:11:47,855 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-12-13 18:11:47,856 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-13 18:11:47,856 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2021-12-13 18:11:47,856 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-13 18:11:47,866 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2021-12-13 18:11:47,867 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 799 ms
+2021-12-13 18:11:47,967 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-13 18:11:47,973 INFO  [@project.artifactId@ @project.version@] [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Starting...
+2021-12-13 18:11:47,997 INFO  [@project.artifactId@ @project.version@] [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Start completed.
+2021-12-13 18:11:47,997 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-12-13 18:55:31,544 WARN  [@project.artifactId@ @project.version@] [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "create table association_value_entry (id int8 not null, association_key varchar(255) not null, association_value varchar(255), saga_id varchar(255) not null, saga_type varchar(255), primary key (id))" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table association_value_entry (id int8 not null, association_key varchar(255) not null, association_value varchar(255), saga_id varchar(255) not null, saga_type varchar(255), primary key (id))" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:562)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:507)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:277)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:71)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at fr.rekla.gosraAuto.authentication.GosraAutoServerApplication.main(GosraAutoServerApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "pg_type_typname_nsp_index"
+  Détail : Key (typname, typnamespace)=(association_value_entry, 2200) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2565)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2297)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 39 common frames omitted
+2021-12-13 18:55:31,593 WARN  [@project.artifactId@ @project.version@] [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "create table token_entry (processor_name varchar(255) not null, segment int4 not null, owner varchar(255), timestamp varchar(255) not null, token oid, token_type varchar(255), primary key (processor_name, segment))" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table token_entry (processor_name varchar(255) not null, segment int4 not null, owner varchar(255), timestamp varchar(255) not null, token oid, token_type varchar(255), primary key (processor_name, segment))" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:562)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:507)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:277)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:71)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at fr.rekla.gosraAuto.authentication.GosraAutoServerApplication.main(GosraAutoServerApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.postgresql.util.PSQLException: ERROR: type "token_entry" already exists
+  Indice : A relation has an associated type of the same name, so you must use a name that doesn't conflict with any existing type.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2565)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2297)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 39 common frames omitted
+2021-12-13 18:55:31,629 WARN  [@project.artifactId@ @project.version@] [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "create sequence hibernate_sequence start 1 increment 1" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create sequence hibernate_sequence start 1 increment 1" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:562)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:507)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:226)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at fr.rekla.gosraAuto.authentication.GosraAutoServerApplication.main(GosraAutoServerApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "hibernate_sequence" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2565)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2297)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 37 common frames omitted
+2021-12-13 18:55:31,630 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-13 18:55:31,630 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-13 18:55:31,734 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.a.XStreamAutoConfiguration - Initializing an XStream instance since none was found. The auto configuration base packages will be used as wildcards for the XStream security settings.
+2021-12-13 18:55:31,736 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.u.XStreamSecurityTypeUtility - Constructing wildcard type for base package [fr.rekla.gosraAuto.authentication].
+2021-12-13 18:55:31,737 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.u.XStreamSecurityTypeUtility - Constructing wildcard type for base package [org.axonframework.eventhandling.tokenstore].
+2021-12-13 18:55:31,737 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.u.XStreamSecurityTypeUtility - Constructing wildcard type for base package [org.axonframework.modelling.saga.repository.jpa].
+2021-12-13 18:55:31,740 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.ChainingConverter - ContentTypeConverter of type [class org.axonframework.serialization.xml.XomToStringConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/Document
+2021-12-13 18:55:31,740 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.ChainingConverter - ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToXomConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/Document
+2021-12-13 18:55:31,770 WARN  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-13 18:55:32,013 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-12-13 18:55:32,018 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-12-13 18:55:32,065 WARN  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.axonframework.spring.config.AxonConfiguration'; nested exception is org.axonframework.lifecycle.LifecycleHandlerInvocationException: One of the start handlers in phase [null] failed with the following exception:
+2021-12-13 18:55:32,067 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-13 18:55:32,068 INFO  [@project.artifactId@ @project.version@] [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2021-12-13 18:55:32,070 INFO  [@project.artifactId@ @project.version@] [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Shutdown completed.
+2021-12-13 18:55:32,072 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.c.c.StandardService - Stopping service [Tomcat]
+2021-12-13 18:55:32,082 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-13 18:55:32,099 ERROR [@project.artifactId@ @project.version@] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean named 'userCache' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'userCache' in your configuration.
+
+2021-12-13 18:55:33,548 INFO  [@project.artifactId@ @project.version@] [restartedMain] f.r.g.a.GosraAutoServerApplication - Starting GosraAutoServerApplication using Java 11.0.13 on rekla-Katana-GF66-11UG with PID 18702 (/home/rekla/dev/projects/gosra-auto/gosra-auto-authentication/target/classes started by rekla in /home/rekla/dev/projects/gosra-auto)
+2021-12-13 18:55:33,548 DEBUG [@project.artifactId@ @project.version@] [restartedMain] f.r.g.a.GosraAutoServerApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-13 18:55:33,548 INFO  [@project.artifactId@ @project.version@] [restartedMain] f.r.g.a.GosraAutoServerApplication - The following profiles are active: command
+2021-12-13 18:55:33,792 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-13 18:55:33,797 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2021-12-13 18:55:33,813 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.axonframework.springboot.autoconfig.EventProcessingAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-12-13 18:55:33,831 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#4c0d0d7c#33' of type [org.axonframework.spring.config.annotation.SpringContextParameterResolverFactoryBuilder$ClasspathParameterResolverFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:55:33,831 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#4c0d0d7c#33' of type [org.axonframework.messaging.annotation.MultiParameterResolverFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:55:33,832 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#60f8df31#33' of type [org.axonframework.spring.config.annotation.SpringBeanDependencyResolverFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:55:33,833 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#3cd78a2e' of type [org.axonframework.spring.config.annotation.SpringBeanParameterResolverFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:55:33,840 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '__axon-parameter-resolver-factory' of type [org.axonframework.spring.config.ApplicationContextLookupParameterResolverFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:55:33,841 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '__axon-parameter-resolver-factory' of type [org.axonframework.messaging.annotation.MultiParameterResolverFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:55:33,848 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#226a3c54' of type [org.axonframework.spring.config.annotation.SpringHandlerDefinitionBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:55:33,849 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#226a3c54' of type [org.axonframework.messaging.annotation.MultiHandlerDefinition] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:55:33,850 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#24357f2c' of type [org.axonframework.spring.config.annotation.SpringHandlerEnhancerDefinitionBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:55:33,850 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#24357f2c' of type [org.axonframework.messaging.annotation.MultiHandlerEnhancerDefinition] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:55:33,852 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '__axon-handler-definition' of type [org.axonframework.messaging.annotation.MultiHandlerDefinition] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-13 18:55:33,904 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-12-13 18:55:33,904 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-12-13 18:55:33,904 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2021-12-13 18:55:33,904 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-13 18:55:33,909 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2021-12-13 18:55:33,910 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 359 ms
+2021-12-13 18:55:33,956 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-13 18:55:33,959 INFO  [@project.artifactId@ @project.version@] [restartedMain] c.z.h.HikariDataSource - HikariPool-3 - Starting...
+2021-12-13 18:55:33,980 INFO  [@project.artifactId@ @project.version@] [restartedMain] c.z.h.HikariDataSource - HikariPool-3 - Start completed.
+2021-12-13 18:55:33,980 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-12-13 18:55:34,104 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-13 18:55:34,104 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-13 18:55:34,163 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.a.XStreamAutoConfiguration - Initializing an XStream instance since none was found. The auto configuration base packages will be used as wildcards for the XStream security settings.
+2021-12-13 18:55:34,165 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.u.XStreamSecurityTypeUtility - Constructing wildcard type for base package [fr.rekla.gosraAuto.authentication].
+2021-12-13 18:55:34,165 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.u.XStreamSecurityTypeUtility - Constructing wildcard type for base package [org.axonframework.eventhandling.tokenstore].
+2021-12-13 18:55:34,165 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.u.XStreamSecurityTypeUtility - Constructing wildcard type for base package [org.axonframework.modelling.saga.repository.jpa].
+2021-12-13 18:55:34,168 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.ChainingConverter - ContentTypeConverter of type [class org.axonframework.serialization.xml.XomToStringConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/Document
+2021-12-13 18:55:34,168 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.s.ChainingConverter - ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToXomConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/Document
+2021-12-13 18:55:34,219 WARN  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-13 18:55:34,365 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-12-13 18:55:34,368 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-12-13 18:55:34,395 INFO  [@project.artifactId@ @project.version@] [restartedMain] i.a.a.c.i.AxonServerManagedChannel - Requesting connection details from 172.16.16.245:8124
+2021-12-13 18:55:34,430 INFO  [@project.artifactId@ @project.version@] [restartedMain] i.a.a.c.i.AxonServerManagedChannel - Successfully connected to 172.16.16.245:8124
+2021-12-13 18:55:34,431 INFO  [@project.artifactId@ @project.version@] [restartedMain] i.a.a.c.i.ControlChannelImpl - Connected instruction stream for context 'default'. Sending client identification
+2021-12-13 18:55:34,433 INFO  [@project.artifactId@ @project.version@] [restartedMain] i.a.a.c.c.i.CommandChannelImpl - CommandChannel for context 'default' connected, 0 command handlers registered
+2021-12-13 18:55:34,434 INFO  [@project.artifactId@ @project.version@] [restartedMain] i.a.a.c.c.i.CommandChannelImpl - Registered handler for command 'fr.rekla.gosraAuto.authentication.api.UserCreateCommand' in context 'default'
+2021-12-13 18:55:34,437 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2021-12-13 18:55:34,438 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2021-12-13 18:55:34,452 INFO  [@project.artifactId@ @project.version@] [restartedMain] f.r.g.a.GosraAutoServerApplication - Started GosraAutoServerApplication in 0.943 seconds (JVM running for 4444.603)
+2021-12-13 18:55:34,455 INFO  [@project.artifactId@ @project.version@] [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-12-13 18:57:53,996 INFO  [@project.artifactId@ @project.version@] [SpringApplicationShutdownHook] i.a.a.c.c.i.CommandChannelImpl - Unregistered handler for command 'fr.rekla.gosraAuto.authentication.api.UserCreateCommand' in context 'default'
+2021-12-13 18:57:54,012 INFO  [@project.artifactId@ @project.version@] [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-13 18:57:54,014 INFO  [@project.artifactId@ @project.version@] [SpringApplicationShutdownHook] c.z.h.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2021-12-13 18:57:54,018 INFO  [@project.artifactId@ @project.version@] [SpringApplicationShutdownHook] c.z.h.HikariDataSource - HikariPool-3 - Shutdown completed.

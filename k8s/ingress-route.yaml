@@ -1,3 +1,12 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: stripprefix
+  namespace: gosra-auto
+spec:
+  stripPrefix:
+    prefixes:
+      - /api
 ---
 apiVersion: traefik.containo.us/v1alpha1
 kind: Middleware
@@ -6,7 +15,7 @@ metadata:
   namespace: gosra-auto
 spec:
   addPrefix:
-    prefix: /ihm
+    prefix: /api
 ---
 apiVersion: traefik.containo.us/v1alpha1
 kind: Middleware
@@ -28,38 +37,46 @@ spec:
   entryPoints:
     - web
   routes:
-    - match: Host(`gosra-auto.dz`)
-      kind: Rule
-      middlewares:
-        - name: add-prefix
-        - name: redirect-scheme
-      services:
-        - name: gosra-auto-ihm-service
-          port: 4200
----
-apiVersion: traefik.containo.us/v1alpha1
-kind: IngressRoute
-metadata:
-  name: nginx-https
-  namespace: gosra-auto
-spec:
-  entryPoints:
-    - websecure
-  routes:
-    - match: Host(`gosra-auto.dz`)
-      kind: Rule
-      services:
-        - name: gosra-auto-ihm-service
-          port: 4200
     - match: Host(`gosra-auto.dz`) && Path(`/ihm`)
       kind: Rule
+#      middlewares:
+#        - name: add-prefix
+#        - name: redirect-scheme
       services:
         - name: gosra-auto-ihm-service
           port: 4200
-    - match: Host(`gosra-auto.dz`) && Path(`/server`)
+    - match: Host(`gosra-auto.dz`) && Path(`/api/users/events/a5649a86-96cb-4935-af75-3ea0978e1ac3`)
       kind: Rule
+      middlewares:
+#        - name: add-prefix
+#        - name: redirect-scheme
       services:
         - name: gosra-auto-server-service
-          port: 8080
-  tls:
-    certResolver: pebble
+          port: 8888
+#---
+#apiVersion: traefik.containo.us/v1alpha1
+#kind: IngressRoute
+#metadata:
+#  name: nginx-https
+#  namespace: gosra-auto
+#spec:
+#  entryPoints:
+#    - websecure
+#  routes:
+#    - match: Host(`gosra-auto.dz`)
+#      kind: Rule
+#      services:
+#        - name: gosra-auto-ihm-service
+#          port: 4200
+#    - match: Host(`gosra-auto.dz`) && Path(`/ihm`)
+#      kind: Rule
+#      services:
+#        - name: gosra-auto-ihm-service
+#          port: 4200
+#    - match: Host(`gosra-auto.dz`) && Path(`/server`)
+#      kind: Rule
+#      services:
+#        - name: gosra-auto-server-service
+#          port: 8888
+#  tls:
+#    certResolver: pebble

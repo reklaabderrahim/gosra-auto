@@ -16,7 +16,7 @@ spec:
         app: gosra-auto-server-deployment
     spec:
       containers:
-        - image: reklaabderrahim/gosra-auto-server:latest
+        - image: reklaabderrahim/gosra-auto-authentication:latest
           name: gosra-auto-server
 ---
 apiVersion: v1
@@ -29,5 +29,5 @@ spec:
     app: gosra-auto-server-deployment
   ports:
     - protocol: TCP
-      port: 8080
-      targetPort: 8080
+      port: 8888
+      targetPort: 8888

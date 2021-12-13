@@ -17,6 +17,7 @@ import java.util.stream.Stream;
 @RestController
 @RequestMapping("/users")
 @AllArgsConstructor
+@CrossOrigin("*")
 public class UserRestController {
 
     private CommandGateway commandGateway;
@@ -33,6 +34,7 @@ public class UserRestController {
 
     @GetMapping("/events/{eventId}")
     public Stream getEvents(@PathVariable String eventId) {
+        System.out.println("toto");
         return eventStore.readEvents(eventId).asStream();
     }
 }

@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>fr.rekla.gosra-auto</groupId>
-    <artifactId>gosra-auto-server</artifactId>
+    <artifactId>gosra-auto-authentication</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>gosra-auto-server</name>
-    <description>gosra-auto-server</description>
+    <name>gosra-auto-authentication</name>
+    <description>gosra-auto-authentication</description>
     <properties>
         <java.version>11</java.version>
         <kotlin.version>1.5.10</kotlin.version>
@@ -228,10 +228,10 @@
                         <version>${jib-maven-plugin-version}</version>
                         <configuration>
                             <from>
-                                <image>openjdk:17-alpine</image>
+                                <image>openjdk:11.0-slim</image>
                             </from>
                             <to>
-                                <image>registry.hub.docker.com/reklaabderrahim/gosra-auto-server</image>
+                                <image>registry.hub.docker.com/reklaabderrahim/gosra-auto-authentication</image>
                             </to>
                         </configuration>
                     </plugin>
