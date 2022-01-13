@@ -14,8 +14,8 @@
     <name>gosra-auto-authentication</name>
     <description>gosra-auto-authentication</description>
     <properties>
-        <java.version>11</java.version>
-        <kotlin.version>1.5.10</kotlin.version>
+        <java.version>15</java.version>
+        <kotlin.version>1.6.10</kotlin.version>
         <axon.version>4.5.5</axon.version>
         <lombok.version>1.18.22</lombok.version>
         <dozer.version>6.5.2</dozer.version>
@@ -228,7 +228,7 @@
                         <version>${jib-maven-plugin-version}</version>
                         <configuration>
                             <from>
-                                <image>openjdk:11.0-slim</image>
+                                <image>openjdk:15-alpine</image>
                             </from>
                             <to>
                                 <image>registry.hub.docker.com/reklaabderrahim/gosra-auto-authentication</image>

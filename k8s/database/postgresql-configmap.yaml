@@ -3,7 +3,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: postgres-db-config
-  namespace: gosra-auto
+  namespace: servers
   labels:
     app: postgresql-db
 data:

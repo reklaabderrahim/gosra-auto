@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: pgadmin
-  namespace: gosra-auto
+  namespace: servers
 spec:
   serviceName: pgadmin-service
   podManagementPolicy: Parallel
@@ -60,7 +60,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: pgadmin-headless
-  namespace: gosra-auto
+  namespace: servers
 spec:
   ports:
     - protocol: TCP

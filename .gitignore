@@ -1,5 +1,5 @@
 .idea
 gosra-auto-ihm/node_modules
-gosra-auto-server/.mvn
-gosra-auto-server/gosra-auto-server.iml
-gosra-auto-server/target
+gosra-auto-authentication/.mvn
+gosra-auto-authentication/gosra-auto-authentication.iml
+gosra-auto-authentication/target

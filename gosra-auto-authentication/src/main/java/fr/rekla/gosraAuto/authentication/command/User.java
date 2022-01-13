@@ -21,6 +21,10 @@ public class User {
     private String username;
     private CurrentStatus currentStatus;
 
+    public User() {
+        // Required by Axon to construct an empty instance to initiate Event Sourcing.
+    }
+
     @CommandHandler
     public User(UserCreateCommand userCreateCommand) {
         if (StringUtils.isEmpty(userCreateCommand.getUsername())) {
@@ -34,9 +38,5 @@ public class User {
         userId = event.getId();
         username = event.getUsername();
         currentStatus = CurrentStatus.CREATED;
-    }
-
-    public User() {
-        // Required by Axon to construct an empty instance to initiate Event Sourcing.
     }
 }

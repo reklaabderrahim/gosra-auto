@@ -14,7 +14,7 @@ export class AppComponent implements OnInit{
 
 
   getEvents() {
-    this.toto$ = this.http.get("http://gosra-auto.dz/api/users/events/a5649a86-96cb-4935-af75-3ea0978e1ac3");
+    this.toto$ = this.http.get("http://localhost:8888/api/users/events/27d73e30-d580-4a37-809b-41e92f19eee9");
   }
 
   ngOnInit(): void {
